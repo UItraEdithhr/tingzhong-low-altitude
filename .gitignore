@@ -1,0 +1,56 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+local.properties
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.conda/
+*.egg-info/
+
+# Android / Gradle / IDE
+.gradle/
+.idea/
+**/build/
+.android-build/
+local.properties
+.cxx/
+
+# JavaScript
+node_modules/
+
+# Runtime data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+logs/
+_remote_demo/runtime/
+_remote_demo/tools/
+uom_received.jsonl
+
+# Generated archives and old binaries
+*.zip
+*.apk
+!dist/*.apk
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
