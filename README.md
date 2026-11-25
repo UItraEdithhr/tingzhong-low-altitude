@@ -4,6 +4,13 @@
 
 当前原生 Android 版本：**v2.14.0（versionCode 33）**。
 
+## 下载完整工程
+
+- 发布页面：[v2.14.0 · 低空综合保障系统完整源码](https://github.com/UItraEdithhr/tingzhong-low-altitude/releases/tag/v2.14.0)
+- 完整源码 ZIP：[直接下载](https://github.com/UItraEdithhr/tingzhong-low-altitude/releases/download/v2.14.0/tingzhong-low-altitude-source-v2.14.0.zip)
+
+源码 ZIP 包含完整合并工程、文档、资源、验证脚本与 Android v2.14.0 调试 APK。仓库已公开，查看和下载无需登录；修改仓库需要相应权限。
+
 > 本仓库用于研发、联调与演示，不代表真实飞行认证、生产部署或 ATC 放行能力。
 
 ## 工程组成
@@ -46,4 +53,4 @@
 
 ## 许可说明
 
-本仓库默认作为私有工程整理，没有新增统一的开源许可证。公开仓库或分发前，请确认各子项目、地图资源、字体、图标和第三方依赖各自的许可要求。
+本仓库已公开，未新增统一的开源许可证。公开分发前，请确认各子项目、地图资源、字体、图标和第三方依赖各自的许可要求。
