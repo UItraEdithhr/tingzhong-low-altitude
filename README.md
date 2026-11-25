@@ -2,14 +2,14 @@
 
 一体化低空保障演示工程，包含设备端、飞控后端、管理平台、通讯态势、地面站、PWA 与原生 Android 飞手端。
 
-当前原生 Android 版本：**v2.14.0（versionCode 33）**。
+当前原生 Android 版本：**v2.15.1（versionCode 35）**。
 
 ## 下载完整工程
 
-- 发布页面：[v2.14.0 · 低空综合保障系统完整源码](https://github.com/UItraEdithhr/tingzhong-low-altitude/releases/tag/v2.14.0)
-- 完整源码 ZIP：[直接下载](https://github.com/UItraEdithhr/tingzhong-low-altitude/releases/download/v2.14.0/tingzhong-low-altitude-source-v2.14.0.zip)
+- 发布页面：[v2.15.1 · 低空综合保障系统完整源码](https://github.com/UItraEdithhr/tingzhong-low-altitude/releases/tag/v2.15.1)
+- 完整源码 ZIP：[直接下载](https://github.com/UItraEdithhr/tingzhong-low-altitude/releases/download/v2.15.1/tingzhong-low-altitude-source-v2.15.1.zip)
 
-源码 ZIP 包含完整合并工程、文档、资源、验证脚本与 Android v2.14.0 调试 APK。仓库已公开，查看和下载无需登录；修改仓库需要相应权限。
+源码 ZIP 包含完整合并工程、文档、资源、验证脚本与 Android v2.15.1 调试 APK。仓库已公开，查看和下载无需登录；修改仓库需要相应权限。
 
 > 本仓库用于研发、联调与演示，不代表真实飞行认证、生产部署或 ATC 放行能力。
 
@@ -22,8 +22,8 @@
 - `comms/`：通讯与态势页面。
 - `pilot-app/`：C 端 PWA 与旧版 Android 打包工程。
 - `shared/`：跨系统统一接口契约。
-- `_remote_demo/`：远程演示、守护与验证脚本（不含运行凭据）。
-- `_validation/`：最新飞行记录公网验证脚本与结果。
+- `_remote_demo/`：远程演示、真实 POST 守护与验证脚本（不含运行凭据）。
+- `_validation/`：飞行记录、简报与结构化输出验证脚本和结果。
 - `docs/merge/`：新旧工程合并清单与决策记录。
 - `dist/`：最新 Android 调试安装包。
 
@@ -35,15 +35,19 @@
 - 飞前检查、飞行准备记录、历史筛选、摘要导出和离线补传。
 - 弱网自动重连、五分钟快照过期保护。
 - 告警处理备注、二次确认、复核状态与飞行记录处理历史。
+- Agent 飞行前简报与记录复盘，结构化输出、长度与语言校验、合法证据路径。
+- 公网真实 POST 健康探测、故障分类、最后成功时间与保守隧道恢复。
 - 只读 MCP 工具接入。
 
 ## 验证状态
 
-- Android：**76 项 JVM 测试通过**。
-- 后端：**160 项自动化测试通过**。
+- Android：**81 项 JVM 测试通过**。
+- 后端：**173 项自动化测试通过**。
+- 守护与真实 POST 探测：**7 项测试通过**。
 - 飞行记录及处理历史：本机与公网接口验证通过，重复同步保持幂等。
-- v2.14.0 APK：v2 调试签名验证通过。
-- v2.14.0 未进行真机安装与界面验收；真实飞行、生产认证及多人生产权限体系未验证。
+- 结构化简报：本机 Kimi `k3-agent` 实测通过，91 个英文单词、证据字段合法、未触发重试或回退。
+- v2.15.1 APK：v2 调试签名验证通过。
+- 未进行真机安装与界面验收；真实飞行、生产认证及多人生产权限体系未验证。
 
 ## 配置与安全
 
